@@ -1,0 +1,14 @@
+{
+  "name": "saifal-portfolio",
+  "version": "1.0.0",
+  "description": "Swiss Neo-Brutalism AI Cloud Solution Architect Portfolio for Saif Al-Musawi",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}

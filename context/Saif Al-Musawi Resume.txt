@@ -1,0 +1,60 @@
+Saif Al-Musawi 
+saifalmusawi1308@gmail.com  •  0420 657 829 • www.linkedin.com/in/saif-almusawi
+SUMMARY 
+
+Sales Analyst at a Microsoft Partner with experience designing AI-enabled workflows, governance reporting solutions, and process automation across sales and bid operations. Proven track record in RFP qualification, bid planning, Microsoft partner ecosystem reporting, and translating business requirements into scalable AI-assisted solutions. Combines analytical, commercial, and technical skills to improve decision-making, operational efficiency, and business outcomes.
+PROFESSIONAL EXPERIENCE 
+
+Arinco, Melbourne
+March 2026 - Present
+National (ANZ) Sales Analyst
+•	Designed and implemented AI-powered RFP Qualification and Planning agents, establishing a repeatable AI-assisted framework used to support bid qualification, risk assessment, planning, and response preparation activities.
+•	Designed and developed the Arinco Partner Dashboard, improving visibility of Microsoft pipeline, segmentation, and reporting required for stakeholder reviews.
+•	Defined a multi-source reporting model combining CRM, Microsoft Partner Centre, and delivery data, improving visibility and supporting more accurate governance reporting and decision-making.
+•	Supported live RFP submissions through qualification, planning, content structuring, capability alignment, and response preparation activities.
+•	Supported qualification and planning activities for strategic public sector opportunities, leveraging AI-enabled workflows to improve bid readiness and decision-making.
+•	Mapped procurement pathways and panel opportunities across ANZ, improving organisational understanding of public sector engagement and supporting bidding readiness.
+•	Managed Microsoft Partner Centre offerings, partner pipeline coordination, and co-sell reporting activities to strengthen partner alignment and opportunity visibility.
+•	Led process documentation and operational improvement initiatives, introducing automation-first approaches to reporting, sales support, and bid management workflows.
+iSelect, Melbourne
+May 2025 – March 2026
+Comparison Expert/Salesperson 
+•	Consulted with customers to identify needs and recommend suitable insurance solutions in a target-driven environment. 
+•	Consistently managed high-volume customer interactions while balancing service quality and commercial outcomes. 
+•	Developed an AI-assisted sales prototype to improve quoting efficiency and support sales workflow optimisation.
+PROJECTS & EXTRACURRICULAR 
+
+LeadSpark AI - AI-Powered Sales Workflow Platform 
+June 2025
+•	Designed and developed a web-based platform to support automated lead intelligence and sales preparation workflows
+•	Integrated AI-assisted logic to improve lead qualification, research, and outreach efficiency
+•	Built interactive dashboards and modular UI components to support scalable use across different scenarios
+•	Focused on bridging sales processes with data and automation, forming a foundation for business workflow tooling
+EDUCATION 
+
+Bachelor of Pharmacy (Honours), Monash University	2022-2023
+Bachelor of Health and Medical Science (Honours), Deakin University	2021
+Bachelor of Biomedical Science, Deakin University	2018-2020
+SKILLS 
+
+Technical: 
+•	Power BI  
+•	AI Workflow Design  
+•	Prompt Engineering  
+•	Data Modelling  
+•	Git  
+•	Excel (Advanced)
+Business & Consulting: 
+•	RFP Qualification & Planning  
+•	Sales Analytics  
+•	Pipeline Management  
+•	Process Improvement  
+•	Stakeholder Management  
+•	Requirements Gathering  
+•	Governance Reporting
+Platforms: 
+•	Microsoft Partner Centre 
+•	Dynamics 365 (Exposure) 
+•	Projectworks (Exposure) 
+•	Microsoft Copilot 
+•	Microsoft 365
