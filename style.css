@@ -139,6 +139,7 @@ header {
   border-right: var(--border-thick);
   text-decoration: none;
   color: var(--text-primary);
+  white-space: nowrap;
 }
 
 .nav-links {
@@ -153,13 +154,15 @@ header {
 .nav-links a {
   display: flex;
   align-items: center;
-  padding: 0 2rem;
+  padding: 0 1.75rem;
   text-decoration: none;
   color: var(--text-primary);
   font-family: var(--font-mono);
   font-weight: 500;
+  font-size: 0.9rem;
   border-left: var(--border-thin);
   transition: var(--transition-fast);
+  white-space: nowrap;
 }
 
 .nav-links a:hover {
@@ -167,14 +170,85 @@ header {
   color: var(--bg-color);
 }
 
-@media (max-width: 768px) {
+/* Hamburger toggle button — hidden on desktop */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0 1.5rem;
+  height: 100%;
+}
+
+.nav-toggle span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--text-primary);
+  transition: var(--transition-fast);
+}
+
+/* Hamburger → X when active */
+.nav-toggle.active span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.nav-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+.nav-toggle.active span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+@media (max-width: 640px) {
   .logo {
     border-right: none;
-    padding: 0 1.5rem;
+    padding: 0 1.25rem;
+    font-size: 1rem;
   }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg-color);
+    border-bottom: var(--border-thick);
+    flex-direction: column;
+    z-index: 99;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links li {
+    border-bottom: var(--border-thin);
+  }
+
+  .nav-links a {
+    padding: 1.1rem 1.5rem;
+    border-left: none;
+    font-size: 0.9rem;
+    width: 100%;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 900px) {
   .nav-links a {
     padding: 0 1rem;
     font-size: 0.8rem;
+  }
+  .logo {
+    padding: 0 1.25rem;
+    font-size: 1.1rem;
   }
 }
 
@@ -272,42 +346,66 @@ header {
   box-shadow: 4px 4px 0px var(--text-primary);
 }
 
-@media (max-width: 992px) {
+/* ---- HERO RESPONSIVE ---- */
+@media (max-width: 1200px) {
   .hero {
-    background-position: left center;
-    min-height: 550px;
-    padding: 3rem 0;
+    min-height: 620px;
+  }
+  .hero-main {
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero {
+    background-position: 20% center;
+    min-height: 520px;
+    padding: 3.5rem 0;
   }
   .hero-overlay-container {
-    justify-content: flex-start;
     padding: 0 2rem;
   }
   .hero-main {
-    width: 100%;
-    background: transparent;
-    backdrop-filter: none;
-    border: none;
-    box-shadow: none;
+    max-width: 100%;
     padding: 0;
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 640px) {
   .hero {
-    min-height: 480px;
+    min-height: auto;
+    padding: 3rem 0 3.5rem;
+    background-image: none;
+    background-color: var(--bg-color);
   }
   .hero-overlay-container {
     padding: 0 1.25rem;
   }
-}
-
-@media (max-width: 768px) {
+  .hero-main h1 {
+    font-size: clamp(2.4rem, 11vw, 3.5rem);
+    line-height: 0.92;
+    margin-bottom: 1.5rem;
+  }
+  .hero-sub {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
   .hero-actions {
     flex-direction: column;
     width: 100%;
+    gap: 0.75rem;
   }
   .brutalist-btn {
     width: 100%;
+    padding: 1rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Large screen hero breathing room */
+@media (min-width: 1400px) {
+  .hero {
+    min-height: 800px;
   }
 }
 
@@ -344,7 +442,7 @@ header {
   text-transform: uppercase;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 900px) {
   .metric-card:not(:last-child) {
     border-right: none;
     border-bottom: var(--border-thin);
@@ -354,19 +452,39 @@ header {
   }
 }
 
+@media (max-width: 640px) {
+  .metric-card {
+    padding: 1.5rem 1.25rem;
+  }
+  .metric-num {
+    font-size: clamp(1.8rem, 8vw, 2.5rem);
+  }
+  .metric-label {
+    font-size: 0.85rem;
+  }
+}
+
 /* --- PROJECT SECTION SECTION & HEADERS --- */
 .section-title {
   padding: 2.5rem 3rem;
   border-bottom: var(--border-thick);
-  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-size: clamp(1.5rem, 4vw, 3.5rem);
   background-color: var(--text-primary);
   color: var(--bg-color);
   letter-spacing: -0.02em;
+  line-height: 1;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .section-title {
-    padding: 1.5rem 1.5rem;
+    padding: 1.75rem 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .section-title {
+    padding: 1.25rem 1.25rem;
+    font-size: clamp(1.4rem, 7vw, 2rem);
   }
 }
 
@@ -418,17 +536,44 @@ header {
   transform: scale(1.02);
 }
 
-@media (max-width: 992px) {
+@media (max-width: 900px) {
   .project-block {
     grid-template-columns: 1fr;
   }
   .project-sidebar {
     border-right: none;
     border-bottom: var(--border-thin);
-    padding: 2rem 1.5rem;
+    padding: 2rem 2rem;
   }
   .project-main {
-    padding: 2rem 1.5rem;
+    padding: 2rem 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .project-sidebar {
+    padding: 1.5rem 1.25rem;
+  }
+  .project-main {
+    padding: 1.5rem 1.25rem;
+  }
+  .project-title {
+    font-size: clamp(1.5rem, 8vw, 2.2rem);
+    margin-bottom: 1rem;
+  }
+  .project-desc {
+    font-size: 1rem;
+  }
+  .pipeline-num {
+    min-width: 2.75rem;
+    padding: 0.75rem;
+    font-size: 0.85rem;
+  }
+  .pipeline-title {
+    font-size: 0.82rem;
+  }
+  .pipeline-desc {
+    font-size: 0.78rem;
   }
 }
 
@@ -617,15 +762,37 @@ header {
   color: var(--bg-color);
 }
 
-@media (max-width: 992px) {
+@media (max-width: 900px) {
   .matrix-cell {
     border-right: none !important;
     border-bottom: var(--border-thick) !important;
-    padding: 2.5rem 1.5rem;
+    padding: 2.5rem 2rem;
     min-height: auto;
   }
   .matrix-cell:last-child {
     border-bottom: none !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .matrix-cell {
+    padding: 2rem 1.25rem;
+  }
+  .matrix-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .matrix-tag {
+    font-size: 0.78rem;
+    padding: 0.3rem 0.65rem;
+  }
+}
+
+/* Large screen matrix min-height boost */
+@media (min-width: 1400px) {
+  .matrix-cell {
+    min-height: 380px;
+    padding: 4rem 3.5rem;
   }
 }
 
@@ -748,24 +915,28 @@ header {
 footer {
   background-color: var(--bg-color);
   padding: 6rem 3rem;
+  border-top: var(--border-thick);
 }
 
 .footer-container {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
   gap: 4rem;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .footer-left h2 {
-  font-size: clamp(2.5rem, 6vw, 5.5rem);
+  font-size: clamp(2rem, 6vw, 5.5rem);
   margin-bottom: 2rem;
+  line-height: 0.92;
 }
 
 .footer-left p {
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   max-width: 700px;
   color: var(--text-secondary);
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .footer-right {
@@ -796,9 +967,10 @@ footer {
   padding: 1.5rem 0;
   text-decoration: none;
   color: var(--text-primary);
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   font-weight: 700;
   transition: var(--transition-fast);
+  word-break: break-all;
 }
 
 .footer-links-list a:hover {
@@ -808,6 +980,8 @@ footer {
 .footer-links-list a span.arrow {
   font-size: 1.5rem;
   transition: var(--transition-fast);
+  flex-shrink: 0;
+  margin-left: 1rem;
 }
 
 .footer-links-list a:hover span.arrow {
@@ -821,9 +995,9 @@ footer {
   margin-top: auto;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 900px) {
   footer {
-    padding: 4rem 1.5rem;
+    padding: 4rem 2rem;
   }
   .footer-container {
     grid-template-columns: 1fr;
@@ -831,5 +1005,40 @@ footer {
   }
   .footer-right {
     justify-content: flex-start;
+  }
+}
+
+@media (max-width: 640px) {
+  footer {
+    padding: 3rem 1.25rem;
+  }
+  .footer-left h2 {
+    font-size: clamp(1.8rem, 10vw, 3rem);
+    margin-bottom: 1.25rem;
+  }
+  .footer-left p {
+    font-size: 1rem;
+  }
+  .footer-links-list a {
+    font-size: 0.9rem;
+    padding: 1.1rem 0;
+  }
+}
+
+/* ---- LARGE SCREEN ENHANCEMENTS ---- */
+@media (min-width: 1600px) {
+  .hero-overlay-container,
+  .footer-container {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .project-sidebar {
+    padding: 4rem;
+  }
+  .project-main {
+    padding: 4rem;
+  }
+  footer {
+    padding: 8rem 4rem;
   }
 }

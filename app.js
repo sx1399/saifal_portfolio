@@ -7,7 +7,32 @@ document.addEventListener('DOMContentLoaded', () => {
   initSystemDiagnostics();
   initScrollSpy();
   initHoverAnimations();
+  initNavToggle();
 });
+
+/**
+ * Mobile hamburger navigation toggle.
+ */
+function initNavToggle() {
+  const toggle = document.getElementById('nav-toggle');
+  const navLinks = document.getElementById('nav-links');
+
+  if (!toggle || !navLinks) return;
+
+  toggle.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+    // Animate hamburger → X
+    toggle.classList.toggle('active');
+  });
+
+  // Close menu when a nav link is clicked (smooth UX on mobile)
+  navLinks.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      toggle.classList.remove('active');
+    });
+  });
+}
 
 /**
  * Log a high-contrast brutalist greeting in console for developer review.
