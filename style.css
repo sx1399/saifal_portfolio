@@ -213,8 +213,9 @@ header {
     display: flex;
   }
 
+  /* Hide nav list by default on mobile — must override the base display:flex */
   .nav-links {
-    display: none;
+    display: none !important;
     position: fixed;
     top: 60px;
     left: 0;
@@ -225,8 +226,9 @@ header {
     z-index: 99;
   }
 
+  /* Show when JS adds .open class */
   .nav-links.open {
-    display: flex;
+    display: flex !important;
   }
 
   .nav-links li {
