@@ -96,6 +96,11 @@ p {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+.grid-4col {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
 .grid-4quad {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -346,6 +351,11 @@ header {
   background-color: transparent;
   color: var(--text-primary);
   box-shadow: 4px 4px 0px var(--text-primary);
+}
+
+.brutalist-btn.sm {
+  padding: 0.65rem 1.25rem;
+  font-size: 0.82rem;
 }
 
 /* ---- HERO RESPONSIVE ---- */
@@ -871,6 +881,75 @@ header {
   height: auto;
   max-height: 550px;
   object-fit: contain;
+}
+
+/* --- FINTECH SHOWCASE MODE --- */
+.project-visual-wrapper.fintech-mode {
+  aspect-ratio: 16/9;
+  background: radial-gradient(circle at 50% 50%, #0d1e38 0%, #060b17 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-visual-wrapper.fintech-mode::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 28px 28px;
+  pointer-events: none;
+}
+
+.project-visual-wrapper.fintech-mode img {
+  width: 100%;
+  max-width: 660px;
+  height: auto;
+  object-fit: contain;
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.65);
+  border-radius: 24px;
+  filter: grayscale(100%) contrast(115%);
+  transition: var(--transition-medium);
+  position: relative;
+  z-index: 1;
+}
+
+.project-visual-wrapper.fintech-mode:hover img {
+  filter: grayscale(0%) contrast(100%);
+  transform: scale(1.03);
+}
+
+@media (max-width: 1100px) and (min-width: 641px) {
+  .grid-4col {
+    grid-template-columns: 1fr 1fr;
+  }
+  .grid-4col .metric-card:nth-child(2n) {
+    border-right: none;
+  }
+  .grid-4col .metric-card:nth-child(1),
+  .grid-4col .metric-card:nth-child(2) {
+    border-bottom: var(--border-thin);
+  }
+}
+
+@media (max-width: 640px) {
+  .grid-4col {
+    grid-template-columns: 1fr;
+  }
+  .grid-4col .metric-card:not(:last-child) {
+    border-right: none;
+    border-bottom: var(--border-thin);
+  }
+  .project-visual-wrapper.fintech-mode {
+    padding: 1.25rem;
+    aspect-ratio: auto;
+    min-height: 240px;
+  }
 }
 
 /* --- ABOUT DOSSIER GRID & LAYOUT --- */

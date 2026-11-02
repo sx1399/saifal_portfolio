@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 856 540" width="856" height="540">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064E3B" />
+      <stop offset="45%" stop-color="#059669" />
+      <stop offset="100%" stop-color="#042F2E" />
+    </linearGradient>
+    <linearGradient id="goldChip" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE68A" />
+      <stop offset="50%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#B45309" />
+    </linearGradient>
+    <radialGradient id="glowOrb" cx="85%" cy="20%" r="55%">
+      <stop offset="0%" stop-color="#34D399" stop-opacity="0.45" />
+      <stop offset="100%" stop-color="#059669" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Card Base -->
+  <rect x="8" y="8" width="840" height="524" rx="44" ry="44" fill="url(#cardBg)" stroke="rgba(255,255,255,0.25)" stroke-width="3" />
+  <rect x="8" y="8" width="840" height="524" rx="44" ry="44" fill="url(#glowOrb)" />
+
+  <!-- Top Row: Wathiq Brand + Contactless -->
+  <rect x="64" y="56" width="68" height="68" rx="18" ry="18" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.3)" stroke-width="2" />
+  <path d="M 80 80 C 85 80, 88 90, 92 106 C 95 112, 98 100, 102 90 C 106 100, 109 112, 112 106 C 116 90, 120 80, 124 84" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+  <text x="150" y="102" fill="#FFFFFF" font-family="Plus Jakarta Sans, Inter, sans-serif" font-weight="800" font-size="38" letter-spacing="-1">Wathiq</text>
+  <text x="690" y="96" fill="#A7F3D0" font-family="Plus Jakarta Sans, Inter, sans-serif" font-weight="700" font-size="20" letter-spacing="2">VIRTUAL</text>
+
+  <!-- EMV Gold Chip -->
+  <rect x="64" y="190" width="96" height="72" rx="14" ry="14" fill="url(#goldChip)" />
+  <line x1="64" y1="226" x2="160" y2="226" stroke="rgba(0,0,0,0.22)" stroke-width="2" />
+  <line x1="112" y1="190" x2="112" y2="262" stroke="rgba(0,0,0,0.22)" stroke-width="2" />
+
+  <!-- Card Number -->
+  <text x="64" y="352" fill="#FFFFFF" font-family="JetBrains Mono, monospace" font-weight="700" font-size="38" letter-spacing="6">4532 •••• •••• 8841</text>
+
+  <!-- Bottom Row: Cardholder + Visa Infinite -->
+  <text x="64" y="432" fill="rgba(255,255,255,0.65)" font-family="Plus Jakarta Sans, Inter, sans-serif" font-weight="600" font-size="16" letter-spacing="2">MULTI-CURRENCY • IQD / USD / AUD</text>
+  <text x="64" y="468" fill="#FFFFFF" font-family="Plus Jakarta Sans, Inter, sans-serif" font-weight="700" font-size="26" letter-spacing="1.5">SAIF AL-IRAQI</text>
+
+  <text x="665" y="462" fill="#FFFFFF" font-family="Plus Jakarta Sans, Inter, sans-serif" font-style="italic" font-weight="900" font-size="48" letter-spacing="-1">VISA</text>
+  <text x="710" y="486" fill="#FCD34D" font-family="Plus Jakarta Sans, Inter, sans-serif" font-weight="700" font-size="15" letter-spacing="2">PLATINUM</text>
+</svg>

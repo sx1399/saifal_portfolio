@@ -24,6 +24,13 @@ Comparison Expert/Salesperson
 •	Developed an AI-assisted sales prototype to improve quoting efficiency and support sales workflow optimisation.
 PROJECTS & EXTRACURRICULAR 
 
+Wathiq (واثق) - Cryptographic BaaS & Cross-Border Financial SuperApp
+July 2026 - Present
+•	Architected a hardware-secured digital payment network and diaspora remittance rail modernizing transactions between Australia/GCC and Iraq
+•	Designed a 2-of-3 Multi-Party Computation (MPC) custody model leveraging smartphone Secure Enclaves to eliminate account freeze risks
+•	Engineered cross-border payment integration using AUSTRAC PayID/NPP rails and Central Bank of Iraq (CBI) compliant USD sub-accounts
+•	Designed JIT virtual card push-provisioning (Apple Pay/Google Wallet) and $0-hardware phone-to-phone SoftPOS NFC merchant checkout
+
 LeadSpark AI - AI-Powered Sales Workflow Platform 
 June 2025
 •	Designed and developed a web-based platform to support automated lead intelligence and sales preparation workflows

@@ -37,7 +37,18 @@ Render these two primary system showcases as high-contrast structural grid secti
     5. DATA SYNC: Output structured payload mapping for CRM utilization.
   - Stack Architecture: Base44 App Architecture, Custom Prompt Arrays, Asynchronous State Processing.
 
-- Project 2: "Autonomous RFP & Bid Qualification Framework"
+- Project 2: "Wathiq (واثق) — Cryptographic BaaS & Cross-Border Financial SuperApp"
+  - Monospace Status Tag: "[ STATUS: LIVE MVP & DATA ROOM ]" -> Include link: https://wathiqq.netlify.app
+  - Project Summary: Hardware-secured digital payment network and diaspora remittance rail engineered to modernize cross-border liquidity between Australia/GCC and Iraq. Built on 2-of-3 Multi-Party Computation (MPC) and smartphone Secure Enclaves, Wathiq eliminates institutional account freeze risks, executes instant 1% cross-border transfers into protected USD accounts, provisions instant virtual cards with Apple Pay / Google Wallet support, and turns smartphones into zero-hardware SoftPOS tap-to-pay checkout terminals.
+  - Core Pipeline Mechanics:
+    1. DIASPORA INGESTION: AUSTRAC PayID/NPP and GCC remittance rails capturing cross-border flows into protected USD accounts.
+    2. HARDWARE-SECURED MPC CUSTODY: 2-of-3 Multi-Party Computation with iOS/Android Secure Enclave biometric keys.
+    3. DUAL-CURRENCY LEDGER: Compliant real-time settlement across USD and IQD via partner BaaS and CBI rails.
+    4. INSTANT CARD ISSUANCE: JIT-funded virtual Visa/Mastercard push-provisioned directly to Apple Pay & Google Wallet.
+    5. SOFTPOS & MICRO-MERCHANT CHECKOUT: $0-hardware phone-to-phone NFC tap and instant @WathiqID handles.
+  - Stack Architecture: 2-of-3 MPC Threshold Cryptography (Secure Enclave), NymCard JIT Processing, Apple Pay & Google Wallet NFC, TigerBeetle Multi-Currency Ledger.
+
+- Project 3: "Autonomous RFP & Bid Qualification Framework"
   - Monospace Status Tag: "[ STATUS: ENTERPRISE PRODUCTION ]"
   - Project Summary: Designed and deployed a multi-stage agentic engine utilizing Copilot infrastructure to ingest highly variable enterprise RFPs, perform automated risk assessment scoring, map multi-source capability matrix dependencies, and generate structured bid response blueprints.
   - Stack Architecture: Microsoft Copilot Studio, Advanced Context Engineering, Dynamics 365, Partner Centre Data Warehouses.
